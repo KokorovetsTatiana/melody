@@ -6,16 +6,20 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.container {
+  max-width: 1280px;
+  margin: auto;
+}
+
 .header {
+  height: 60px;
   background-color: #635854;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  /* padding-top: 12px;
+  padding-bottom: 12px; */
   border-bottom: 4px solid #3596f5;
 }
 
 .navbar {
-  max-width: 1280px;
-  margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -26,6 +30,14 @@ body {
   margin: 0;
   display: flex;
   text-align: center;
+}
+
+.navbar-item {
+  padding: 9px 16px;
+}
+
+.navbar-item:hover {
+  background-color: #3596f5;
 }
 
 .navbar-item:not(:last-child) {
@@ -52,4 +64,22 @@ body {
   line-height: 1.1765;
   text-decoration: none;
   color: #fff;
+}
+
+.main {
+  padding-top: 54px;
+  display: flex;
+}
+
+.main-img {
+  margin-right: 125px;
+}
+
+.home-image path {
+  opacity: 0;
+  cursor: pointer;
+}
+
+.home-image path:hover {
+  opacity: 1;
 }
